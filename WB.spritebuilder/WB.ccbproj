@@ -82,6 +82,11 @@
 		</dict>
 		<key>Sprites</key>
 		<dict/>
+		<key>bg/Desert-Mecha-l.jpg</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
+		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>

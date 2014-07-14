@@ -10,4 +10,9 @@
 
 @implementation Wall
 
+
+- (void)didLoadFromCCB {
+    self.physicsBody.collisionType = @"wall";
+}
+
 @end

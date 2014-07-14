@@ -6,8 +6,13 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "bullet.h"
+#import "Bullet.h"
 
-@implementation bullet
+@implementation Bullet
+
+
+- (void)didLoadFromCCB {
+    self.physicsBody.collisionType = @"bullet";
+}
 
 @end

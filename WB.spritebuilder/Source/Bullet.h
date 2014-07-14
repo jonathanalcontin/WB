@@ -8,6 +8,6 @@
 
 #import "CCNode.h"
 
-@interface bullet : CCNode
+@interface Bullet : CCNode
 
 @end
