@@ -9,5 +9,6 @@
 #import "CCNode.h"
 
 @interface Bullet : CCNode
-
+@property (nonatomic, assign) NSInteger score;
+@property (nonatomic,assign) int myCustomIsaac;
 @end

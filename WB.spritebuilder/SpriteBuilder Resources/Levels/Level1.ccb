@@ -71,8 +71,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>54.000030517578125</real>
-							<real>131.50001525878906</real>
+							<real>51.000030517578125</real>
+							<real>148.50001525878906</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -85,8 +85,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.84757179021835327</real>
-							<real>2.4439578056335449</real>
+							<real>1.005476713180542</real>
+							<real>2.8333709239959717</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -100,8 +100,6 @@
 						<string>Wall.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -144,7 +142,7 @@
 				<key>value</key>
 				<array>
 					<real>100</real>
-					<real>265</real>
+					<real>320</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>
@@ -174,6 +172,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

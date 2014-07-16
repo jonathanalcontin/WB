@@ -103,8 +103,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>10</real>
-									<real>10</real>
+									<real>0.5</real>
+									<real>0.5</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -221,6 +221,19 @@
 		</array>
 		<key>customClass</key>
 		<string>Bullet</string>
+		<key>customProperties</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>myCustomIsaac</string>
+				<key>optimized</key>
+				<false/>
+				<key>type</key>
+				<integer>0</integer>
+				<key>value</key>
+				<string>3</string>
+			</dict>
+		</array>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
