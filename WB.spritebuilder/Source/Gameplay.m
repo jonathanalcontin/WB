@@ -8,13 +8,13 @@
 
 #import "Gameplay.h"
 #import "Bullet.h"
+#import "Wall.h"
 #import "GameDataCoin.h"
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
     CCNode *_mech1;
     CCNode *_levelNode;
     CCNode *_health;
-    CCLabelTTF *_highscoreLabel;
     CCLabelTTF *_scoreLabel;
 
     float _life;
@@ -61,21 +61,27 @@
     _scoreLabel.string = [NSString stringWithFormat:@"%d", [GameDataCoin sharedData].coins];
 }
 
+
+
+- (void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)pair bullet:(CCNode *)bullet wall:(CCNode *)wall {
+    // collision handling, set a collision animation to occur after bullet hits.
+        CCLOG(@"GOLD SWEET GOLD");
+    
+    _scoreLabel.string = [NSString stringWithFormat:@"%d", [GameDataCoin sharedData].coins];
+}
+
+
+
+
 - (void)win {
     [self endGameWithMessage:@"You win!"];
-    
+//    [self respawnWall]; fix this tonight
     //
     
 }
 - (void)endGameWithMessage:(NSString*)message {
     CCLOG(@"%@",message);
-    NSNumber *highScore = [[NSUserDefaults standardUserDefaults] objectForKey:@"highscore"];
-    if (self.score > [highScore intValue]) {
-        // new highscore!
-        highScore = [NSNumber numberWithInt:self.score];
-        [[NSUserDefaults standardUserDefaults] setObject:highScore forKey:@"highscore"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-    }
+ 
 }
 
 
@@ -84,15 +90,22 @@
         {
             _life -= 3;
             _health.scaleX = _life/100 ;
-            //set damage done as coins/score gained  (Should I use singletons instead of highscore to track coins so it can be accessed by the store scene later on?)
+            //set damage done as coins/score gained
         }
         if (_life <= 0) {
             _health.scale = 0;
             _life = 0;
+//            [self win]; have robot do a finishing animation that will collide with the wall that will remove the wall and create another wall blow up animation.
             [wall removeFromParent];
-            [self win];
+            
             //have wall crumble animation, also input different wall sprites at middle and critical health states;
         }
     }
-    
+//
+//- (void)respawnWall {
+//    Wall* wall = (Wall*)[CCBReader load:@"wall"];
+////    wall.position = cpAdd(_levelNode.position, ccp(0,0));
+//    
+//    //respawn the wall after winning last level.
+//}
 @end

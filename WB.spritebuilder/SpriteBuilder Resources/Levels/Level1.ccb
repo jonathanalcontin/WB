@@ -85,8 +85,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.005476713180542</real>
-							<real>2.8333709239959717</real>
+							<real>0.99111509323120117</real>
+							<real>4.0055851936340332</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -100,6 +100,8 @@
 						<string>Wall.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -141,10 +143,10 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>100</real>
-					<real>320</real>
-					<integer>0</integer>
-					<integer>0</integer>
+					<real>1</real>
+					<real>1</real>
+					<integer>2</integer>
+					<integer>2</integer>
 				</array>
 			</dict>
 			<dict>
@@ -172,8 +174,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

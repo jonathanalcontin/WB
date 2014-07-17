@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59A6F7981978725200CC1917 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6F7971978725200CC1917 /* Store.m */; };
 		59A70BA3196F37DC00334C16 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A70BA2196F37DC00334C16 /* Gameplay.m */; };
 		59A70BA71970576300334C16 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A70BA61970576300334C16 /* Bullet.m */; };
 		59A70BAD1974323E00334C16 /* Wall.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A70BAC1974323E00334C16 /* Wall.m */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59A6F7961978725200CC1917 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Store.h; path = Source/Store.h; sourceTree = "<group>"; };
+		59A6F7971978725200CC1917 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Store.m; path = Source/Store.m; sourceTree = "<group>"; };
 		59A70BA1196F37DC00334C16 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		59A70BA2196F37DC00334C16 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		59A70BA51970576300334C16 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bullet.h; path = Source/Bullet.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				59A6F7961978725200CC1917 /* Store.h */,
+				59A6F7971978725200CC1917 /* Store.m */,
 				59A70BA1196F37DC00334C16 /* Gameplay.h */,
 				59A70BA2196F37DC00334C16 /* Gameplay.m */,
 				59A70BA51970576300334C16 /* Bullet.h */,
@@ -367,6 +372,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				59A70BA71970576300334C16 /* Bullet.m in Sources */,
 				59A70BAD1974323E00334C16 /* Wall.m in Sources */,
+				59A6F7981978725200CC1917 /* Store.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

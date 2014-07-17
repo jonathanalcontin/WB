@@ -13,6 +13,9 @@
     CCLOG(@"play button pressed");
     CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:gameplayScene];
+    //    [[CCDirector sharedDirector] popScene];
+//    CCTransition *transition = [CCTransition transitionMoveInWithDirection:CCTransitionDirectionUp duration:2.f];
+//    [[CCDirector sharedDirector] pushScene:gameplayScene withTransition:transition];
 }
 
 @end
