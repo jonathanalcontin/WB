@@ -103,8 +103,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
+									<real>1</real>
+									<real>1</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -186,8 +186,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.14291840791702271</real>
+							<real>0.14291840791702271</real>
 							<true/>
 							<integer>0</integer>
 						</array>
@@ -267,40 +267,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-14.714813232421875</real>
-					<real>-6.339813232421875</real>
+					<real>-6.911980152130127</real>
+					<real>-3.0925734043121338</real>
 				</array>
 				<array>
-					<real>-15.714813232421875</real>
-					<real>8.992218017578125</real>
+					<real>-7.7659697532653809</real>
+					<real>3.7974288463592529</real>
 				</array>
 				<array>
-					<real>14.679718017578125</real>
-					<real>9.066436767578125</real>
+					<real>6.8868627548217773</real>
+					<real>3.4504954814910889</real>
 				</array>
 				<array>
-					<real>12.898468017578125</real>
-					<real>-6.171844482421875</real>
+					<real>6.3295712471008301</real>
+					<real>-3.1804840564727783</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>12.898468017578125</real>
-						<real>-6.171844482421875</real>
+						<real>6.3295712471008301</real>
+						<real>-3.1804840564727783</real>
 					</array>
 					<array>
-						<real>14.679718017578125</real>
-						<real>9.066436767578125</real>
+						<real>6.8868627548217773</real>
+						<real>3.4504954814910889</real>
 					</array>
 					<array>
-						<real>-15.714813232421875</real>
-						<real>8.992218017578125</real>
+						<real>-7.7659697532653809</real>
+						<real>3.7974288463592529</real>
 					</array>
 					<array>
-						<real>-14.714813232421875</real>
-						<real>-6.339813232421875</real>
+						<real>-6.911980152130127</real>
+						<real>-3.0925734043121338</real>
 					</array>
 				</array>
 			</array>

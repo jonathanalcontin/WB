@@ -10,4 +10,11 @@
 
 @implementation Store
 
+
+- (void)home {
+    CCLOG(@"store close, back to gameplay");
+    [[CCDirector sharedDirector] popScene];
+}
+
+
 @end
