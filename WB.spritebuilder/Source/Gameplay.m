@@ -42,14 +42,14 @@
    // loads the bullet.ccb we have set up in Spritebuilder
    Bullet* bullet = (Bullet*)[CCBReader load:@"bullet"];
     // position the bullets at the front of the gun of mecha
-   bullet.position = ccpAdd(_mech1.position, ccp(16, 60));
+   bullet.position = ccpAdd(_mech1.position, ccp(100, 130));
 // add the bullet to the physicsNode of this scene (because it has physics enabled)
 
      [_physicsNode addChild:bullet];
   
 //manually create & apply a force to launch the bullet
  CGPoint launchDirection = ccp(1, 0);
-  CGPoint force = ccpMult(launchDirection, 8000);
+  CGPoint force = ccpMult(launchDirection, 7000);
   [bullet.physicsBody applyForce:force];
 }
 
