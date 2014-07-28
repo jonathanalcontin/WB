@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>19</integer>
+	<integer>2</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -18,7 +18,7 @@
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>docDimensionsType</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>fileType</key>
 	<string>CocosBuilder</string>
 	<key>fileVersion</key>
@@ -41,15 +41,98 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>18</integer>
+				<integer>1</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>spriteFrame</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>0</integer>
+									</dict>
+									<key>name</key>
+									<string>spriteFrame</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>7</integer>
+									<key>value</key>
+									<array>
+										<string>NormalShotAnimation/mechas1.png</string>
+										<string>Use regular file</string>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>0</integer>
+									</dict>
+									<key>name</key>
+									<string>spriteFrame</string>
+									<key>time</key>
+									<real>0.033333335071802139</real>
+									<key>type</key>
+									<integer>7</integer>
+									<key>value</key>
+									<array>
+										<string>NormalShotAnimation/mechas2.png</string>
+										<string>Use regular file</string>
+									</array>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>type</key>
+							<integer>7</integer>
+						</dict>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>spriteFrame</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>0</integer>
+									</dict>
+									<key>name</key>
+									<string>spriteFrame</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>7</integer>
+									<key>value</key>
+									<array>
+										<string>NormalShotAnimation/mechas1.png</string>
+										<string>Use regular file</string>
+									</array>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>type</key>
+							<integer>7</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
-				<string>CCBFile</string>
+				<string>CCSprite</string>
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCBFile</string>
+				<string>CCSprite</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -71,11 +154,22 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>7</real>
-							<real>-1.5</real>
+							<real>0.0</real>
+							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
 						</array>
 					</dict>
 					<dict>
@@ -87,25 +181,46 @@
 						<array>
 							<real>1</real>
 							<real>1</real>
-							<false/>
+							<true/>
 							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
+						<key>baseValue</key>
+						<array>
+							<string></string>
+							<string></string>
+						</array>
 						<key>name</key>
-						<string>ccbFile</string>
+						<string>spriteFrame</string>
 						<key>type</key>
-						<string>CCBFile</string>
+						<string>SpriteFrame</string>
 						<key>value</key>
-						<string>Wall.ccb</string>
+						<array>
+							<string></string>
+							<string></string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+						</array>
 					</dict>
 				</array>
-				<key>selected</key>
+				<key>seqExpanded</key>
 				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>Mechshoot</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -143,10 +258,10 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>1</real>
-					<real>1</real>
-					<integer>2</integer>
-					<integer>2</integer>
+					<real>0.0</real>
+					<real>0.0</real>
+					<integer>0</integer>
+					<integer>0</integer>
 				</array>
 			</dict>
 			<dict>
@@ -174,6 +289,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -185,13 +302,13 @@
 			<key>ext</key>
 			<string>phone</string>
 			<key>height</key>
-			<integer>265</integer>
+			<integer>0</integer>
 			<key>name</key>
 			<string>Phone</string>
 			<key>scale</key>
 			<real>1</real>
 			<key>width</key>
-			<integer>100</integer>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>centeredOrigin</key>
@@ -199,17 +316,70 @@
 			<key>ext</key>
 			<string>tablet phonehd</string>
 			<key>height</key>
-			<integer>265</integer>
+			<integer>0</integer>
 			<key>name</key>
 			<string>Tablet</string>
 			<key>scale</key>
 			<real>2</real>
 			<key>width</key>
-			<integer>100</integer>
+			<integer>0</integer>
 		</dict>
 	</array>
 	<key>sequences</key>
 	<array>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.033333335071802139</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>launchBullet</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>1</integer>
+			<key>length</key>
+			<real>0.3333333432674408</real>
+			<key>name</key>
+			<string>Shoot time</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.1666666716337204</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>512</real>
+			<key>sequenceId</key>
+			<integer>0</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
 		<dict>
 			<key>autoPlay</key>
 			<true/>
@@ -225,17 +395,17 @@
 			<key>length</key>
 			<real>10</real>
 			<key>name</key>
-			<string>Default Timeline</string>
+			<string>what time</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.10000000149011612</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
 			<real>128</real>
 			<key>sequenceId</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>
@@ -248,8 +418,8 @@
 		</dict>
 	</array>
 	<key>stageBorder</key>
-	<integer>1</integer>
+	<integer>3</integer>
 	<key>stageColor</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

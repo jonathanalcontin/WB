@@ -12,6 +12,7 @@
 		59A70BA71970576300334C16 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A70BA61970576300334C16 /* Bullet.m */; };
 		59A70BAD1974323E00334C16 /* Wall.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A70BAC1974323E00334C16 /* Wall.m */; };
 		59A70BBA1977050800334C16 /* GameDataCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A70BB91977050800334C16 /* GameDataCoin.m */; };
+		59A87722198689DC003F06D2 /* Mechshoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A87721198689DC003F06D2 /* Mechshoot.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -71,6 +72,8 @@
 		59A70BAC1974323E00334C16 /* Wall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wall.m; sourceTree = "<group>"; };
 		59A70BB81977050800334C16 /* GameDataCoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDataCoin.h; path = Source/GameDataCoin.h; sourceTree = "<group>"; };
 		59A70BB91977050800334C16 /* GameDataCoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameDataCoin.m; path = Source/GameDataCoin.m; sourceTree = "<group>"; };
+		59A87720198689DB003F06D2 /* Mechshoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mechshoot.h; sourceTree = "<group>"; };
+		59A87721198689DC003F06D2 /* Mechshoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mechshoot.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 				59A6F7971978725200CC1917 /* Store.m */,
 				59A70BA1196F37DC00334C16 /* Gameplay.h */,
 				59A70BA2196F37DC00334C16 /* Gameplay.m */,
+				59A87720198689DB003F06D2 /* Mechshoot.h */,
+				59A87721198689DC003F06D2 /* Mechshoot.m */,
 				59A70BA51970576300334C16 /* Bullet.h */,
 				59A70BB81977050800334C16 /* GameDataCoin.h */,
 				59A70BB91977050800334C16 /* GameDataCoin.m */,
@@ -369,6 +374,7 @@
 				59A70BBA1977050800334C16 /* GameDataCoin.m in Sources */,
 				59A70BA3196F37DC00334C16 /* Gameplay.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				59A87722198689DC003F06D2 /* Mechshoot.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				59A70BA71970576300334C16 /* Bullet.m in Sources */,
 				59A70BAD1974323E00334C16 /* Wall.m in Sources */,
