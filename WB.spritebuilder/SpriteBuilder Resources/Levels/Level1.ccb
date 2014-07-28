@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>19</integer>
+	<integer>23</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -41,7 +41,7 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>18</integer>
+				<integer>22</integer>
 				<key>baseClass</key>
 				<string>CCBFile</string>
 				<key>children</key>
@@ -49,11 +49,11 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCBFile</string>
+				<string>Wall</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_wall</string>
 				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -71,7 +71,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>7</real>
+							<real>4</real>
 							<real>-1.5</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -221,7 +221,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
 			<real>10</real>
 			<key>name</key>

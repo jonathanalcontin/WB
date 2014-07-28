@@ -21,6 +21,10 @@
     CCNode *_health;
     CCLabelTTF *_scoreLabel;
 
+    Wall *_wall;
+    
+    
+    
     float _life;
 }
 // is called when CCB file has completed loading
@@ -33,18 +37,18 @@
     [self addChild: _mech2];
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
-    CCNode *level = [CCBReader load:@"Levels/Level1"];
+    CCNode *level = [CCBReader load:@"Levels/Level1" owner:self];
+    
     [_levelNode addChild:level];
     _physicsNode.collisionDelegate = self;
     _life = 100;
-    
     
     
 }
 
 // called on every touch in this scene
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
-//    [self launchbullet];
+//    [self launchbullet]; is called when this animation is called?
     [[_mech2 animationManager] runAnimationsForSequenceNamed: @"Shoot time"];
 }
 
@@ -61,10 +65,18 @@
     
     //---------------------bullet code ------------------
     
+    
+    CCParticleSystem *gunshotbutt = (CCParticleSystem *)[CCBReader load:@"gunbutt"];
+    gunshotbutt.autoRemoveOnFinish = TRUE;
+    gunshotbutt.position = ccpAdd(_mech2.position, ccp(95, 54));
+    [self addChild:gunshotbutt];
+    
+    
+    //---- ----
    // loads the bullet.ccb we have set up in Spritebuilder
    Bullet* bullet = (Bullet*)[CCBReader load:@"bullet"];
     // position the bullets at the front of the gun of mecha
-   bullet.position = ccpAdd(_mech2.position, ccp(100, 65));
+   bullet.position = ccpAdd(_mech2.position, ccp(95, 54));
 // add the bullet to the physicsNode of this scene (because it has physics enabled)
 
     
@@ -75,6 +87,11 @@
  CGPoint launchDirection = ccp(1, 0);
   CGPoint force = ccpMult(launchDirection, 7000);
   [bullet.physicsBody applyForce:force];
+    
+    
+    
+    
+    
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair bullet:(CCNode *)bullet wall:(CCNode *)wall {
@@ -85,6 +102,13 @@
     CCLOG(@"Bullet hit the wall finnally!");
     
     _scoreLabel.string = [NSString stringWithFormat:@"%d", [GameDataCoin sharedData].coins];
+    
+    
+    //particles that appear when bullet hits wall
+    CCParticleSystem *bluewallhit = (CCParticleSystem *)[CCBReader load:@"gunshot"];
+    bluewallhit.autoRemoveOnFinish = TRUE;
+    bluewallhit.position = ccpAdd(_wall.position, ccp(450, 125));
+    [self addChild:bluewallhit];
 }
 
 
@@ -99,17 +123,17 @@
 
 
 
-- (void)win {
-    [self endGameWithMessage:@"You win!"];
-//    [self respawnWall]; fix this tonight
-    //
-    
-}
-- (void)endGameWithMessage:(NSString*)message {
-    CCLOG(@"%@",message);
-    
- 
-}
+//- (void)win {
+//    [self endGameWithMessage:@"You win!"];
+////    [self respawnWall]; fix this tonight
+//    //
+//    
+//}
+////- (void)endGameWithMessage:(NSString*)message {
+////    CCLOG(@"%@",message);
+////    
+////// 
+//}
 
 
 -(void) hit:(CCNode*)wall {
@@ -119,6 +143,36 @@
             _health.scaleX = _life/100 ;
             //set damage done as coins/score gained
         }
+    
+    //started trying to code wall change sprite here
+    
+//    
+    if (_life <= 75) {
+    ;
+        
+        [[_wall animationManager] runAnimationsForSequenceNamed: @"75Wall"];
+       CCLOG(@"HP hit 75");
+     }
+    
+        //have wall crumble animation, also input different wall sprites at middle and critical health states;
+   
+    if (_life <= 50) {
+        ;
+        
+        [[_wall animationManager] runAnimationsForSequenceNamed: @"50Wall"];
+        CCLOG(@"HP hit 50");
+    }
+    
+    
+    if (_life <= 25) {
+        ;
+        
+        [[_wall animationManager] runAnimationsForSequenceNamed: @"25Wall"];
+        CCLOG(@"HP hit 25");
+    }
+    
+    
+    // --- end code for wall change sprite here
         if (_life <= 0) {
             _health.scale = 0;
             _life = 0;

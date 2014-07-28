@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>4</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -35,12 +35,170 @@
 	<false/>
 	<key>nodeGraph</key>
 	<dict>
+		<key>animatedProperties</key>
+		<dict>
+			<key>0</key>
+			<dict>
+				<key>spriteFrame</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>wall1/buildingD_0001@4x.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>spriteFrame</string>
+					<key>type</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
+			<key>1</key>
+			<dict>
+				<key>spriteFrame</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>wall1/buildingD_0002@4x.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>spriteFrame</string>
+					<key>type</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
+			<key>2</key>
+			<dict>
+				<key>spriteFrame</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>wall1/buildingD_0003@4x.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>spriteFrame</string>
+					<key>type</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
+			<key>3</key>
+			<dict>
+				<key>spriteFrame</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>wall1/buildingD_0004@4x.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>spriteFrame</string>
+					<key>type</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
+			<key>4</key>
+			<dict>
+				<key>spriteFrame</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>wall1/buildingD_0005@4x.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>spriteFrame</string>
+					<key>type</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>baseClass</key>
 		<string>CCSprite</string>
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string></string>
+		<string>Wall</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -161,6 +319,11 @@
 				</array>
 			</dict>
 			<dict>
+				<key>baseValue</key>
+				<array>
+					<string>wall1/buildingD_0001@4x.png</string>
+					<string>Use regular file</string>
+				</array>
 				<key>name</key>
 				<string>spriteFrame</string>
 				<key>type</key>
@@ -229,16 +392,86 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.0</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string></string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
 			<real>10</real>
 			<key>name</key>
-			<string>Default Timeline</string>
+			<string>fullWall</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.0</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>511.0308837890625</real>
+			<key>sequenceId</key>
+			<integer>0</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.0</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string></string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>1</integer>
+			<key>length</key>
+			<real>10</real>
+			<key>name</key>
+			<string>75Wall</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
@@ -248,7 +481,166 @@
 			<key>scale</key>
 			<real>128</real>
 			<key>sequenceId</key>
-			<integer>0</integer>
+			<integer>1</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.0</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string></string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>2</integer>
+			<key>length</key>
+			<real>10</real>
+			<key>name</key>
+			<string>50Wall</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.0</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>2</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.0</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string></string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>3</integer>
+			<key>length</key>
+			<real>10</real>
+			<key>name</key>
+			<string>25Wall</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.0</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>3</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.0</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string></string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>4</integer>
+			<key>length</key>
+			<real>10</real>
+			<key>name</key>
+			<string>critWall</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.0</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>4</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>

@@ -198,7 +198,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string></string>
+							<string>NormalShotAnimation/mechas2.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -215,6 +215,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -289,8 +291,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -363,7 +363,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.1666666716337204</real>
+			<real>0.033333335071802139</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
