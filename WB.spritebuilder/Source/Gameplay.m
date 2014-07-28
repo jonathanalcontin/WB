@@ -68,7 +68,7 @@
     
     CCParticleSystem *gunshotbutt = (CCParticleSystem *)[CCBReader load:@"gunbutt"];
     gunshotbutt.autoRemoveOnFinish = TRUE;
-    gunshotbutt.position = ccpAdd(_mech2.position, ccp(95, 54));
+    gunshotbutt.position = ccpAdd(_mech2.position, ccp(95, 53));
     [self addChild:gunshotbutt];
     
     
@@ -76,7 +76,7 @@
    // loads the bullet.ccb we have set up in Spritebuilder
    Bullet* bullet = (Bullet*)[CCBReader load:@"bullet"];
     // position the bullets at the front of the gun of mecha
-   bullet.position = ccpAdd(_mech2.position, ccp(95, 54));
+   bullet.position = ccpAdd(_mech2.position, ccp(95, 53));
 // add the bullet to the physicsNode of this scene (because it has physics enabled)
 
     
