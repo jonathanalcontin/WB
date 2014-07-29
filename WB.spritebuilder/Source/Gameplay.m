@@ -184,18 +184,30 @@
             _finishButton = (FinishButton *) [CCBReader load:@"finishButton" owner:self];
             _finishButton.position = ccp(300, 150);
             [self addChild: _finishButton];
+            
             [[CCDirector sharedDirector] pause];
+            
+            
+     
+            
             //why does it take so long to do the finishing move? Can we polish this to make this smoother so the action happens.
 //            [self win]; have robot do a finishing animation that will collide with the wall that will remove the wall and create another wall blow up animation.
-//            [wall removeFromParent];
+//        [wall removeFromParent];
             
             //have wall crumble animation, also input different wall sprites at middle and critical health states;
+            
+            
+            //if there is no wall summon a new wall with stronger stats, or load a new level.
         }
     }
 
 - (void)finishButton {
     CCLOG(@"finish button pressed");
     [[CCDirector sharedDirector] resume];
+    [[_mech2 animationManager] runAnimationsForSequenceNamed: @"finish1"];
+    
+    [_wall removeFromParent];
+    [_finishButton setVisible:NO];
 //    CCScene *storeScene = [CCBReader loadAsScene:@"Store"];
 //    // [[CCDirector sharedDirector] popScene];
 //    CCTransition *transition = [CCTransition transitionMoveInWithDirection:CCTransitionDirectionDown duration:1.f];
