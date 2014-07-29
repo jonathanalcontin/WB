@@ -12,17 +12,18 @@
 #import "GameDataCoin.h"
 #import "Store.h"
 #import "Mechshoot.h"
+#import "FinishButton.h"
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
     CCNode *_mech1;
-    Mechshoot *_mech2;
     CCNode *_levelNode;
     CCNode *_health;
     CCLabelTTF *_scoreLabel;
-
-    Wall *_wall;
     
+    FinishButton *_finishButton;
+    Wall *_wall;
+    Mechshoot *_mech2;
     
     
     float _life;
@@ -38,12 +39,15 @@
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     CCNode *level = [CCBReader load:@"Levels/Level1" owner:self];
-    
+
     [_levelNode addChild:level];
     _physicsNode.collisionDelegate = self;
     _life = 100;
     
     
+
+    
+    //-----
 }
 
 // called on every touch in this scene
@@ -176,12 +180,30 @@
         if (_life <= 0) {
             _health.scale = 0;
             _life = 0;
+            
+            _finishButton = (FinishButton *) [CCBReader load:@"finishButton" owner:self];
+            _finishButton.position = ccp(300, 150);
+            [self addChild: _finishButton];
+            [[CCDirector sharedDirector] pause];
+            //why does it take so long to do the finishing move? Can we polish this to make this smoother so the action happens.
 //            [self win]; have robot do a finishing animation that will collide with the wall that will remove the wall and create another wall blow up animation.
-            [wall removeFromParent];
+//            [wall removeFromParent];
             
             //have wall crumble animation, also input different wall sprites at middle and critical health states;
         }
     }
+
+- (void)finishButton {
+    CCLOG(@"finish button pressed");
+    [[CCDirector sharedDirector] resume];
+//    CCScene *storeScene = [CCBReader loadAsScene:@"Store"];
+//    // [[CCDirector sharedDirector] popScene];
+//    CCTransition *transition = [CCTransition transitionMoveInWithDirection:CCTransitionDirectionDown duration:1.f];
+//    [[CCDirector sharedDirector] pushScene:storeScene withTransition:transition];
+}
+
+
+
 
 - (void)store {
     CCLOG(@"coin button pressed");
