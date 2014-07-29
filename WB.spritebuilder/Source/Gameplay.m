@@ -212,9 +212,22 @@
 //    // [[CCDirector sharedDirector] popScene];
 //    CCTransition *transition = [CCTransition transitionMoveInWithDirection:CCTransitionDirectionDown duration:1.f];
 //    [[CCDirector sharedDirector] pushScene:storeScene withTransition:transition];
+    
+    
+    
+    
+  
+    
 }
 
 
+- (void)resetGame {
+    // quick button to reset game for play testing
+    CCNode *level = [CCBReader load:@"Levels/Level1" owner:self];
+    
+    [_levelNode addChild:level];
+    _life = 100;
+}
 
 
 - (void)store {
