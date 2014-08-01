@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign) int score;
 
+- (void)buyTank ;
+
 @end

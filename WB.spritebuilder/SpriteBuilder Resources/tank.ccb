@@ -96,9 +96,9 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
+							<real>0.5</real>
+							<real>0.5</real>
+							<true/>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -132,13 +132,13 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>Tank</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
-		<string></string>
+		<string>_tank</string>
 		<key>memberVarAssignmentType</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>properties</key>
 		<array>
 			<dict>

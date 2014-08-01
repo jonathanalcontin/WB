@@ -34,7 +34,7 @@ static GameDataCoin *sharedData = nil;
 - (void)setCoins:(NSInteger)coins {
     _coins = coins;
     
-    NSNumber *coinNumber = [NSNumber numberWithInt:coins];
+    NSNumber *coinNumber = [NSNumber numberWithInteger:coins];
     
     // store change
     [[NSUserDefaults standardUserDefaults]setObject:coinNumber forKey:@"savedCoins"];

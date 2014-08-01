@@ -15,7 +15,7 @@
 //the keyword "nonatomic" is a property declaration
 //nonatomic properties have better performance than atomic properties (so use them!)
 //@property (nonatomic) NSMutableArray* arrayOfDataToBeStored;
-@property (nonatomic) int coins;
+@property (nonatomic) NSInteger coins;
 
 
 //Static (class) method:
