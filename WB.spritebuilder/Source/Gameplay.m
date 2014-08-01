@@ -32,6 +32,9 @@
     
     //life of the wall
     float _life;
+    
+    //array
+    
 }
 
 //----------------------------------------------------------------------------------
@@ -211,8 +214,7 @@
     [_wall removeFromParent];
     [_finishButton setVisible:NO];
     
-//    [[CCDirector sharedDirector] performSelector:resetGame withObject:nil afterDelay:1.f];
-//    
+   
    //have wall animate disintegration animation to play while @"finish1" animation playing, second after this animation is done call resetGame
     
     

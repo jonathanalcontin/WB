@@ -10,8 +10,5 @@
 
 @interface Tank : CCNode
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 210a0c98dc12c56005970b362e5075fe03219f3b
 @end
