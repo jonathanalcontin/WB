@@ -216,9 +216,11 @@
     
    
    //have wall animate disintegration animation to play while @"finish1" animation playing, second after this animation is done call resetGame
-    
-    
-    
+    double delayInSeconds = 3.5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self resetGame];
+    });
     
 //    CCScene *storeScene = [CCBReader loadAsScene:@"Store"];
 //    // [[CCDirector sharedDirector] popScene];
